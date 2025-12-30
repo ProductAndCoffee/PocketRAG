@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+debug_venv/
+.env
+
+# Backend specifics
+backend/.env
+backend/venv/
+backend/rag_app.db
+backend/chroma_db/
+backend/uploads/
+
+# Chroma / DB
+chroma_db/
+*.sqlite3
+rag_app.db
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+package-lock.json
+
+# Logs
+logs
+*.log
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Virtualenvs
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.DS_Store
+chroma_db/
+uploads/
+rag_app.db
