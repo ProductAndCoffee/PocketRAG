@@ -20,6 +20,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Notes:
-- Replace "[your name]" above with the project's copyright owner (your name or organization).
-- If you'd prefer a different license (Apache-2.0, GPL, etc.), tell me and I can add that instead.
+
