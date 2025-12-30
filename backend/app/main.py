@@ -156,7 +156,8 @@ def query_rag(request: schemas.QueryRequest, db: Session = Depends(get_db)):
             from openai import OpenAI
             client = OpenAI(api_key=api_key)
             
-            system_prompt = """You are a helpful assistant. Answer the user's question using ONLY the following context. 
+            system_prompt = """You are a helpful and comprehensive assistant. Answer the user's question in detail using ONLY the following context. 
+            Explain the concepts fully and provide examples from the text if available.
             If the answer is not in the context, say you don't know. 
             Cite your sources by referring to the document titles and page numbers provided in the context."""
             
