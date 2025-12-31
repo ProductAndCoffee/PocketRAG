@@ -28,3 +28,15 @@ cd frontend
 npm install
 npm run dev
 ```
+
+## Known Limitations
+
+This V1 implementation is optimized for personal use and small-to-medium workloads. Please be aware of the following system limits:
+
+### 1. File Upload & Processing
+- **Synchronous Processing**: Document ingestion happens synchronously during the upload request. Uploading very large PDFs (e.g., 50MB+ or 100+ pages) may result in request timeouts (e.g., 60s limit on some clients) even if the server is still processing.
+- **Memory**: The system processes entire files in memory. Very large individual files may cause high RAM usage.
+
+### 2. Scalability
+- **Vector Database**: Uses a local, persistent instance of ChromaDB (SQLite-based), which is performant for thousands of chunks but may degrade in speed with hundreds of thousands of vectors.
+- **Concurrency**: Local CPU-based embedding generation means simultaneous large uploads will compete for resources, potentially slowing down the application.
